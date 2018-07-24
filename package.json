@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "\"Joseph Montanez\" <jm@comentum.com>",
+  "author": "Joseph Montanez <sutabi@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/joseph-montanez/gulp-rsynced.git"
+  },
   "license": "MIT"
   "dependencies": {
     "fancy-log": "^1.3.2",
