@@ -1,0 +1,16 @@
+{
+  "name": "gulp-rsynced",
+  "version": "0.0.1",
+  "description": "Another gulp rsync",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"Joseph Montanez\" <jm@comentum.com>",
+  "license": "MIT"
+  "dependencies": {
+    "fancy-log": "^1.3.2",
+    "rsync": "^0.6.1",
+    "through2": "^2.0.3"
+  }
+}
