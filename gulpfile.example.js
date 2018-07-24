@@ -6,7 +6,7 @@ var rsyncOptions = {
     source: './',
     dest: '/home/proj/public_html',
     host: 'stage.proj.com',
-    username: 'goalstage',
+    username: 'user',
     recursive: true,
     flags: 'avz',
     exclude: [    
