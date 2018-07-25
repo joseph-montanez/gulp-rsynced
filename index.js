@@ -22,6 +22,10 @@ function sync(filepath, options) {
         rsync.exclude(options.exclude);
     }
 
+    if (options.include) {
+        rsync.include(options.include);
+    }
+
     if (options.delete) {
         rsync.delete();
     }
@@ -56,6 +60,10 @@ function sync(filepath, options) {
 
     if (options.perms) {
         rsync.perms();
+    }
+
+    if (options.patterns) {
+        rsync.patterns(options.patterns);
     }
     
     rsync.destination(
