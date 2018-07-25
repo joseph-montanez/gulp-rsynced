@@ -64,6 +64,11 @@ function sync(filepath, options) {
     );
 
     log('Syncing ' + filepath);
+
+    if (options.showCommand) {
+        log(rsync.command());
+    }
+
     var t = process.hrtime();
     rsync.execute(function(error, code, cmd) {
         // we're done
