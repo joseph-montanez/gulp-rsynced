@@ -21,6 +21,42 @@ function sync(filepath, options) {
     if (options.exclude) {
         rsync.exclude(options.exclude);
     }
+
+    if (options.delete) {
+        rsync.delete();
+    }
+
+    if (options.update) {
+        rsync.update();
+    }
+
+    if (options.quiet) {
+        rsync.quiet();
+    }
+
+    if (options.dry) {
+        rsync.dry();
+    }
+
+    if (options.compress) {
+        rsync.compress();
+    }
+
+    if (options.times) {
+        rsync.times();
+    }
+
+    if (options.progress) {
+        rsync.progress();
+    }
+
+    if (options.dirs) {
+        rsync.dirs();
+    }
+
+    if (options.perms) {
+        rsync.perms();
+    }
     
     rsync.destination(
         options.username + '@' + options.host + ':' + options.dest
