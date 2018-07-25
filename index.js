@@ -65,6 +65,10 @@ function sync(filepath, options) {
     if (options.patterns) {
         rsync.patterns(options.patterns);
     }
+
+    if (options.handle) {
+        options.handle(rsync);
+    }
     
     rsync.destination(
         options.username + '@' + options.host + ':' + options.dest
